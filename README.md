@@ -2,8 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python) 
 ![Flask](https://img.shields.io/badge/Flask-API-green?logo=flask) 
-![License](https://img.shields.io/badge/License-MIT-yellow.svg) 
-![Data](https://img.shields.io/badge/Weather-Data-orange)  
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)  
 
 A simple Flask-based API that serves historical weather data (temperature readings) from the `weather_data` dataset. The project provides endpoints to query temperature by station, date, year, or fetch all available records for a station.  
 
