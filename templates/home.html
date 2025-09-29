@@ -2,16 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Data API</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        p { font-family: 'Times New Roman', Times, serif; line-height: 1.4; }
+        code { background-color: #f4f4f4; padding: 2px 4px; border-radius: 4px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        table, th, td { border: 1px solid #aaa; }
+        th, td { padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
 </head>
-<body>  
-    <h1>Weather Data API</h1>  
-    <p>URL Format: http://127.0.0.1:5000/api/v1/station/date</p>
-    <p>For One Station and One Date: http://127.0.0.1:5000/api/v1/10/19980830</p>
-    <p>For One Station and All Dates: http://127.0.0.1:5000/api/v1/10</p>
-    <p>For One Station and One Year: http://127.0.0.1:5000/api/v1/yearly/10/1998</p>
-    <p>{{data|safe}}</p>  
+<body>
+    <h1>Weather Data API</h1>
+    <div>
+        <p>URL Format: <code>http://127.0.0.1:5000/api/v1/station/date</code></p>
+        <p>For One Station and One Date: <code>http://127.0.0.1:5000/api/v1/10/19980830</code></p>
+        <p>For One Station and All Dates: <code>http://127.0.0.1:5000/api/v1/10</code></p>
+        <p>For One Station and One Year: <code>http://127.0.0.1:5000/api/v1/yearly/10/1998</code></p>
+    </div>
+    <h1>Available Weather Stations</h1>
+    <div>
+        {{ data | safe }}
+    </div>
 </body>
 </html>
