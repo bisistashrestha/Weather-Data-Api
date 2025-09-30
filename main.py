@@ -1,3 +1,20 @@
+# ================================================================
+# File: main.py
+# Author: Bisista Shrestha
+# Date: 2025-09-29
+# License: MIT License (see LICENSE file for details)
+# Description:
+#     A Flask-based weather data API that serves temperature and 
+#     station information from historical datasets.
+#
+#     Features:
+#       - Home route displays available stations.
+#       - Retrieve temperature for a given station and date.
+#       - Fetch all data for a specific station.
+#       - Query yearly data for a station by year.
+# ================================================================
+
+
 from flask import Flask, render_template
 import pandas as pd
 
